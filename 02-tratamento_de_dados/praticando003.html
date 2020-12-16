@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu primeiro programa...</title>
+
+        <style>
+
+            body {
+                background-color: rgb(77, 77, 194);
+                color: white;
+                font: normal 20pt Arial;
+            }
+            h1 {
+                color: orange;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <h1>Olá, mundo!</h1>
+        <p>Já me livrei da maldição</p>
+
+        <script>
+
+            /*
+            Pra converter de String pra Numéros inteiros: 
+                1- parseInt
+                2- Number.parseInt
+                3- Number(numero)
+
+            Pra converter de String pra Numéros decimais: 
+                1- parseFloat
+                2- Number.parseFloat
+                3- Number(numero)
+                
+            Pra converter de Numéros Inteiros ou Numeros decimais pra String:
+                1- .toString
+                2- String(numero)    
+            */
+
+            /*
+            Template String
+
+            Forma antiga
+            'O aluno' + nome + ' com ' + idade + ' anos tirou a nota ' + nota
+            Console: O aluno X com Y anos tirou a nota Z
+
+            Usando o novo Template String
+            `O aluno ${nome} com ${idade} anos tirou a nota ${nota}`
+            Console: O aluno X com Y anos tirou a nota Z
+
+            Obs: As duas formas estão certas, porém fica mais simples usando o Template String com a crase, cifrão e chaves.
+            */
+
+            var n1 = Number.parseInt(window.prompt('Digite um número: '))
+            var n2 = Number.parseFloat(window.prompt('Digite outro número: '))
+            var n3 = Number(window.prompt('Digite outro número: '))
+
+            var soma = n1 + n2 + n3
+            window.alert(`A soma entre ${n1}, ${n2} e ${n3} é igual a ${soma}`) // Usando o Template String
+
+        </script>
+
+    </body>
+</html>
